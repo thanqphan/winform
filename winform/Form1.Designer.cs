@@ -30,14 +30,14 @@
         {
             lbusername = new Label();
             txtusername = new TextBox();
-            txtMatKhau = new TextBox();
+            txtPassword = new TextBox();
             label1 = new Label();
             SuspendLayout();
             // 
             // lbusername
             // 
             lbusername.AutoSize = true;
-            lbusername.Location = new Point(55, 21);
+            lbusername.Location = new Point(55, 22);
             lbusername.Name = "lbusername";
             lbusername.Size = new Size(73, 20);
             lbusername.TabIndex = 0;
@@ -45,34 +45,34 @@
             // 
             // txtusername
             // 
-            txtusername.Location = new Point(161, 21);
+            txtusername.Location = new Point(161, 22);
             txtusername.Name = "txtusername";
-            txtusername.Size = new Size(157, 26);
+            txtusername.Size = new Size(157, 27);
             txtusername.TabIndex = 1;
             // 
-            // txtMatKhau
+            // txtPassword
             // 
-            txtMatKhau.Location = new Point(161, 99);
-            txtMatKhau.Name = "txtMatKhau";
-            txtMatKhau.Size = new Size(157, 26);
-            txtMatKhau.TabIndex = 3;
+            txtPassword.Location = new Point(161, 104);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(157, 27);
+            txtPassword.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(55, 99);
+            label1.Location = new Point(55, 104);
             label1.Name = "label1";
             label1.Size = new Size(73, 20);
             label1.TabIndex = 2;
-            label1.Text = "Mật khẩu:";
+            label1.Text = "Password:";
             label1.Click += label1_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 428);
-            Controls.Add(txtMatKhau);
+            ClientSize = new Size(800, 451);
+            Controls.Add(txtPassword);
             Controls.Add(label1);
             Controls.Add(txtusername);
             Controls.Add(lbusername);
@@ -86,7 +86,7 @@
 
         private Label lbusername;
         private TextBox txtusername;
-        private TextBox txtMatKhau;
+        private TextBox txtPassword;
         private Label label1;
     }
 }
