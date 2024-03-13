@@ -28,12 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            lbusername = new Label();
+            txtusername = new TextBox();
+            SuspendLayout();
+            // 
+            // lbusername
+            // 
+            lbusername.AutoSize = true;
+            lbusername.Location = new Point(55, 22);
+            lbusername.Name = "lbusername";
+            lbusername.Size = new Size(73, 20);
+            lbusername.TabIndex = 0;
+            lbusername.Text = "username";
+            // 
+            // txtusername
+            // 
+            txtusername.Location = new Point(161, 22);
+            txtusername.Name = "txtusername";
+            txtusername.Size = new Size(157, 27);
+            txtusername.TabIndex = 1;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(txtusername);
+            Controls.Add(lbusername);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lbusername;
+        private TextBox txtusername;
     }
 }
