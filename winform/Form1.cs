@@ -11,5 +11,15 @@ namespace winform
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(txtusername.Text.ToString() == "admin"&&txtPassword.Text.ToString()=="admin")
+            {
+                frmMain frmMain = new frmMain();
+                frmMain.ShowDialog();
+                this.Close();
+            }
+        }
     }
 }
